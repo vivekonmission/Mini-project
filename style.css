@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+#check{
+    display: none;
+}
+
+.main_box{
+    
+    height: 100vh;
+
+    background-size: cover;
+    background-image: url(robert-shunev-mS1nlYbq1kA-unsplash.jpg);
+}
+.styles{
+    position: absolute;
+    background-color: transparent;
+    font-size: 30px;
+    padding: 0 30px;
+    text-align: center;
+    z-index: 0;
+    left: 450px;
+    border: 2px solid black;
+    top: 250px;
+    height: 430px;
+    width: 580px;
+    transition: 0.1s linear;
+    border-radius: 10px;
+}
+.styles:active{
+    border-radius: 50px 0 50px 0;
+    border: 4px dashed #FFA559;
+}
+.styles:hover{
+    transition: 1s ease-in-out;
+    font-family: 'Pacifico', cursive;    color: #FF6000;
+    font-weight: bold;
+    
+
+}
+.btn_one i{
+    color: white;
+    font-weight: 700px;
+    font-size: 20px;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition:all 0.3s linear;
+    
+}
+.sidebar_menu{
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    left: -300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition:  0.3s linear;
+}
+.sidebar_menu .btn_two i{
+    font-size: 20px;
+    position: absolute;
+    left: 230px;
+    top: 15px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100% ;
+    line-height: 60px;
+    height: 60px;
+    box-shadow: 0 2px 4px  rgba(255, 255, 255, 0.5) ;
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    
+}
+.btn_one i:hover{
+    font-size: 30px;
+
+}
+.btn_two i:hover{
+    font-size: 25px;
+    transition: 0.3s linear;
+}
+.sidebar_menu .menu li{
+    margin-top: 6px ;
+    padding: 14px 20px;
+}
+.sidebar_menu .menu i,a{
+    color: aliceblue;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.sidebar_menu .social_media{
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    left: 25%;
+    bottom: 30px;
+}
+.sidebar_menu .social_media i{
+    padding: 0 5px;
+}
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+#check:checked ~ .sidebar_menu{
+    left: 0px;
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 5px pink;
+    border: 3px solid  rgba(177, 166, 166, 0.927; 
+}
+
+
+
